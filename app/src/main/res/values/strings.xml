@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Trends</string>
     <string name="facebook_app_id">213793512474606</string>
+    <string name="title_activity_main2">Trends</string>
+    <string name="title_header">Trends</string>
+    <string name="sub_title_header">In your hands</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

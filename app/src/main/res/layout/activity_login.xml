@@ -23,7 +23,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/logoterminado"
+        app:srcCompat="@mipmap/logotransparente2"
         android:layout_above="@+id/loginButton"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="41dp"/>
