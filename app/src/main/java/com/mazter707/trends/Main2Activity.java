@@ -9,21 +9,52 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private List<Album> albumList;
+    private ProductAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view_products);
+
+        mRecyclerView.setHasFixedSize(true);
+
+        albumList = new ArrayList<>();
+        adapter = new ProductAdapter(this, albumList);
+
+
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        mRecyclerView.setLayoutManager(gridLayoutManager);
+        mRecyclerView.setAdapter(adapter);
+
+        prepareAlbums();
+
+        try{
+            Glide.with(this).load(R.drawable.cover).into((ImageView) findViewById(R.id.image_product));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -50,6 +81,61 @@ public class Main2Activity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
+    private void prepareAlbums() {
+        int [] covers = new  int[]{
+                R.drawable.accesorios,
+                R.drawable.chamarra_rojo,
+                R.drawable.colorete,
+                R.drawable.delineador,
+                R.drawable.leggins_amarillo,
+                R.drawable.maquillaje,
+                R.drawable.tenis_blanco,
+                R.drawable.tenisrosa,
+                R.drawable.chamarra_camuflaje,
+                R.drawable.chamarra_chida,
+                R.drawable.bolso_dama,
+                R.drawable.gafas};
+        Album a = new Album(covers[0], "$ 760");
+        albumList.add(a);
+
+        a = new Album(covers[1], "$ 760");
+        albumList.add(a);
+
+        a = new Album(covers[2], "$ 1760");
+        albumList.add(a);
+
+        a = new Album(covers[3], "$ 60");
+        albumList.add(a);
+
+        a = new Album(covers[4], "$ 70");
+        albumList.add(a);
+
+        a = new Album(covers[5], "$ 160");
+        albumList.add(a);
+
+        a = new Album(covers[6], "$ 76");
+        albumList.add(a);
+
+        a = new Album(covers[7], "$ 1700");
+        albumList.add(a);
+
+        a = new Album(covers[8], "$ 1600");
+        albumList.add(a);
+
+        a = new Album(covers[9], "$ 760");
+        albumList.add(a);
+
+        a = new Album(covers[10], "$ 760");
+        albumList.add(a);
+
+        a = new Album(covers[11], "$ 700");
+        albumList.add(a);
+
+        adapter.notifyDataSetChanged();
+
+    }
+
     private void goLoginScreen() {
         Intent intent = new Intent(this, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
