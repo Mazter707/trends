@@ -2,6 +2,7 @@ package com.mazter707.trends;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,6 +52,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         holder.money.setText(album.getMoney());
 
         Glide.with(mContext).load(album.getProduct()).into(holder.product);
+
+        holder.product.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, ProductDetailActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override

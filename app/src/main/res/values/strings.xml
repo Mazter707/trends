@@ -11,4 +11,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_card">In your hands</string>
+    <string name="precio_card">$ 180.00</string>
+    <string name="like_card">Me gusta</string>
+    <string name="title_product">\"Las tendencias del momento\"</string>
+    <string name="detailcontent_product">Desde hace algunos años las rebajas de enero no esperan a que lleguen los Reyes Magos: podemos comenzar a disfrutarlas desde principios de mes, aprovechando lo mismo para ir haciendo regalos con algún que otro descuento, o para \'cazar\' tendencias que llevaremos en primavera y que podemos adaptar de las colecciones de invierno vía rebajas.  Muchas firmas favoritas y bestseller han empezado a rebajar sus colecciones desde el día 2 de enero, con descuentos de entre el 25 y el 70%. Para que no te pierdas ni un oportunidad de comprar the best of the best hemos elaborado una pequeña guía con algunas de las tendencias top que se esperan para 2017, y dónde puedes encontrarlas ya mismo, empezando por las rebajas. Preparadas, listas... ¡ya!</string>
 </resources>

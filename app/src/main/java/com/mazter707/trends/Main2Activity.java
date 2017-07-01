@@ -79,7 +79,7 @@ public class Main2Activity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Replace with the fab activity", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -206,10 +206,6 @@ public class Main2Activity extends AppCompatActivity
             // Handle the camera action
             fragment = new NavigateFragment();
             FragmentTransaction = true;
-        } else if (id == R.id.nav_search) {
-            fragment = new SearchFragment();
-            FragmentTransaction = true;
-
         } else if (id == R.id.nav_notify) {
             fragment = new NotifyFragment();
             FragmentTransaction = true;

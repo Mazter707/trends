@@ -7,10 +7,6 @@
             android:icon="@drawable/ic_home_black_36dp"
             android:title="Navigate"/>
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/ic_search_black_36dp"
-            android:title="Search"/>
-        <item
             android:id="@+id/nav_notify"
             android:icon="@drawable/ic_add_alert_black_36dp"
             android:title="Notify"/>
@@ -25,7 +21,7 @@
         <item
             android:id="@+id/nav_fav"
             android:icon="@drawable/ic_favorite_border_black_36dp"
-            android:title="Fav"/>
+            android:title="Favorites"/>
     </group>
 
     <item android:title="Communicate">

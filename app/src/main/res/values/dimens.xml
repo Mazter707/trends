@@ -5,4 +5,12 @@
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbarlayout_height">256dp</dimen>
+    <dimen name="textsize_usernamedetail">25sp</dimen>
+    <dimen name="precio_detail">15sp</dimen>
+    <dimen name="like_detail">15sp</dimen>
+    <dimen name="margin_left_second_text">7dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+    <dimen name="paddingtop_titleproduct">20dp</dimen>
+    <dimen name="paddingleft_contentproduct">35dp</dimen>
 </resources>
