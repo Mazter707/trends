@@ -27,16 +27,31 @@
                 android:clickable="true"
                 android:scaleType="fitXY"/>
 
-            <TextView
-                android:id="@+id/txt_money"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:layout_below="@+id/image_product"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingRight="10dp"
-                android:gravity="center"
-                android:textSize="15sp"/>
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/likeCheckCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_selector"
+                    android:layout_marginLeft="15dp"
+                    />
+
+            </LinearLayout>
+
+
 
 
         </RelativeLayout>
