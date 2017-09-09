@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "591870892317",
+    "firebase_url": "https://trends-3e94e.firebaseio.com",
+    "project_id": "trends-3e94e",
+    "storage_bucket": "trends-3e94e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591870892317:android:a16b352795de4520",
+        "android_client_info": {
+          "package_name": "com.mazter707.trends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591870892317-9acodi7ec6omf1nntr1ljnd4itvuklhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mazter707.trends",
+            "certificate_hash": "0951eb32cea4eb760bcf484d05a797cd1a2195f7"
+          }
+        },
+        {
+          "client_id": "591870892317-9ve0ojr2tam2pvc952u14knopmf0s5cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCamZUsSeNL9EWZs8B150A0rll_fuNores"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591870892317-9ve0ojr2tam2pvc952u14knopmf0s5cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
